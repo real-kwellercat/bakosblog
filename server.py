@@ -19,5 +19,9 @@ def post(filename):
 def server_static(filepath):
     return bottle.static_file(filepath, "./static")
 
+@app.route("/.well-known/atproto-did")
+def bluesky_confirmation():
+    return "did:plc:iumluhhhx6yta32dauuxwhwr"
+
 # uncomment on development, comment on deploy
 # bottle.run(app)
