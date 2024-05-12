@@ -9,7 +9,11 @@ body {
     font-style: normal;
 }
 
-.posts-list a{
+.notapost a {
+    color:aquamarine;
+}
+
+.posts-list a {
     display: block;
     padding: 1rem;
     background-color: gray;
