@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>bako's blog</title>
 </head>
 <body>
-    <h1>hi guys</h1>
-    <hr/>
-    % for post in posts:
-    <a href="post/{{post}}">{{ post }}</a>
-    % end
+    <div class="posts-list">
+
+        <h1>stupid idiot's website</h1>
+
+        <hr/>
+        % for post in posts:
+        <a href="post/{{post}}" class="post-link">{{ post }}</a>
+        % end
+
+    </div>
 </body>
 </html>

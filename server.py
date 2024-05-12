@@ -15,5 +15,9 @@ def post(filename):
     content = markdown.markdown(md)
     return bottle.template("pages/post.html", content=content)
 
-# uncomment on development
-# bottle.run(app)
+@app.route("/<filepath:path>")
+def server_static(filepath):
+    return bottle.static_file(filepath, "./static")
+
+# uncomment on development, comment on deploy
+bottle.run(app)
