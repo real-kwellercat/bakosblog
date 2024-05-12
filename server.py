@@ -20,4 +20,4 @@ def server_static(filepath):
     return bottle.static_file(filepath, "./static")
 
 # uncomment on development, comment on deploy
-bottle.run(app)
+# bottle.run(app)
